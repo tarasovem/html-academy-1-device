@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Евгений Тарасов](https://up.htmlacademy.ru/htmlcss/26/user/489355).
-* Наставник: Андрей Островский.
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
