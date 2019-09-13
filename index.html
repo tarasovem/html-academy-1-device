@@ -2,37 +2,41 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Магазин гаджетов "Девайс"</title>
+    <title>Магазин гаджетов «Девайс»</title>
   </head>
   <body>
     <header>
       <a>
-        <img src="img/svg/logo-device.svg" alt="Логотип магазина" width="160" height="32">
+        <img src="img/svg/logo-device.svg" alt="Логотип магазина «Device»" width="160" height="32">
       </a>
-      <!--   Форма с поиском   -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="search">Поиск по сайту</label>
+        <input id="search" type="text" name="search" placeholder="Поиск по сайту">
+        <button class="visually-hidden" type="submit">Найти</button>
+      </form>
       <ul>
         <li>
-          <a href="">Войти</a>
+          <a href="" aria-label="Форма входа на сайт">Войти</a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="">Сравнить</a>
+          <a href="" aria-label="Сравнение выбранных товаров">Сравнить</a>
         </li>
         <li>
-          <a href="">Корзина</a>
+          <a href="" aria-label="Просмотр корзины">Корзина</a>
         </li>
       </ul>
       <nav>
         <ul>
           <li>
-            <a href="">Каталог товаров</a>
+            <button type="button" aria-label="Показать список категорий товаров">Каталог товаров</button>
             <ul>
               <li>
                 <a href="">Виртульная реальность</a>
               </li>
               <li>
-                <a href="">Моноподы для селфи</a>
+                <a href="catalog.html">Моноподы для селфи</a>
               </li>
               <li>
                 <a href="">Экшн-камеры</a>
@@ -49,13 +53,13 @@
             </ul>
           </li>
           <li>
-            <a href="">Доставка</a>
+            <a href="" aria-label="Информация о доставке">Доставка</a>
           </li>
           <li>
-            <a href="">Гарантия</a>
+            <a href="" aria-label="Условия гарантии">Гарантия</a>
           </li>
           <li>
-            <a href="">Контакты</a>
+            <a href="" aria-label="Контакты магазина">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -71,57 +75,87 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a>Подробнее о нас</a>
+        <a href="">Подробнее о нас</a>
       </section>
       <section>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/map.jpg" alt="Карта проезда" width="560" height="222">
+        <img src="img/map.jpg" alt="Офис компании по адресу город Москва, улица Строителей, дом 12" width="560" height="222">
         <a>Напишите нам</a>
       </section>
     </main>
+    <section>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="feedback-name">
+            Ваше имя:
+          </label>
+          <input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="feedback-email">
+            Ваш e-mail:
+          </label>
+          <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="feedback-message">
+            Текст письма:
+          </label>
+          <textarea name="feedback-message" id="feedback-message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map.jpg" alt="Офис компании по адресу город Москва, улица Строителей, дом 12" width="560" height="222">
+      <button type="button">Закрыть</button>
+    </section>
     <footer>
       <a>
-        <img src="img/svg/logo-device.svg" alt="Логотип магазина" width="160" height="32">
+        <img src="img/svg/logo-device.svg" alt="Логотип магазина «Device»" width="160" height="32">
       </a>
       <ul>
         <li>
-          <a href="">Войти</a>
+          <a href="" aria-label="Форма входа на сайт">Войти</a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="">Сравнить</a>
+          <a href="" aria-label="Сравнение выбранных товаров">Сравнить</a>
         </li>
         <li>
-          <a href="">Корзина</a>
+          <a href="" aria-label="Просмотр корзины">Корзина</a>
         </li>
       </ul>
       <p>г. Москва, ул. Строителей, 15</p>
       <ul>
         <li>
-          <a href="">Доставка</a>
+          <a href="" aria-label="Информация о доставке">Доставка</a>
         </li>
         <li>
-          <a href="">Гарантия</a>
+          <a href="" aria-label="Условия гарантии">Гарантия</a>
         </li>
         <li>
-          <a href="">Контакты</a>
+          <a href="" aria-label="Контакты магазина">Контакты</a>
         </li>
       </ul>
-      <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+      <p>Тел.: <a href="tel:+74954959595" aria-label="Телефонный номер компании «Device»">+7 (495) 495-95-95</a></p>
       <ul>
         <li>
-          <a href="https://ru-ru.facebook.com/">Facebook</a>
+          <a href="https://ru-ru.facebook.com/" aria-label="Device в Facebook">Facebook</a>
         </li>
         <li>
-          <a href="https://www.instagram.com/?hl=ru">Instagram</a>
+          <a href="https://www.instagram.com/?hl=ru" aria-label="Device в Instagram">Instagram</a>
         </li>
         <li>
-          <a href="https://twitter.com/?lang=ru">Twitter</a>
+          <a href="https://twitter.com/?lang=ru" aria-label="Device в Twitter">Twitter</a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработчики сайта">Html Academy</a>
     </footer>
   </body>
 </html>
