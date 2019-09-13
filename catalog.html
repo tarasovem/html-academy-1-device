@@ -9,28 +9,28 @@
     <a href="index.html">
       <img src="img/svg/logo-device.svg" alt="Логотип магазина «Device»" width="160" height="32">
     </a>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form action="https://echo.htmlacademy.ru" method="get">
       <label for="search">Поиск по сайту</label>
-      <input id="search" type="text" name="search" placeholder="Поиск по сайту">
+      <input id="search" type="search" name="search" placeholder="Поиск по сайту">
       <button class="visually-hidden" type="submit">Найти</button>
     </form>
     <ul>
       <li>
-        <a href="" aria-label="Форма входа на сайт">Войти</a>
+        <a href="">Войти</a>
       </li>
     </ul>
     <ul>
       <li>
-        <a href="" aria-label="Сравнение выбранных товаров">Сравнить</a>
+        <a href="">Сравнить</a>
       </li>
       <li>
-        <a href="" aria-label="Просмотр корзины">Корзина</a>
+        <a href="">Корзина</a>
       </li>
     </ul>
     <nav>
       <ul>
         <li>
-          <button type="button" aria-label="Показать список категорий товаров">Каталог товаров</button>
+          <a href="">Каталог товаров</a>
           <ul>
             <li>
               <a href="">Виртульная реальность</a>
@@ -53,64 +53,62 @@
           </ul>
         </li>
         <li>
-          <a href="" aria-label="Информация о доставке">Доставка</a>
+          <a href="">Доставка</a>
         </li>
         <li>
-          <a href="" aria-label="Условия гарантии">Гарантия</a>
+          <a href="">Гарантия</a>
         </li>
         <li>
-          <a href="" aria-label="Контакты магазина">Контакты</a>
+          <a href="">Контакты</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
     <h1>Моноподы для селфи</h1>
-    <nav aria-label="Breadcrumb">
-      <ul>
-        <li>
-          <a>Главная</a>
-        </li>
-        <li>
-          <a>Список моноподов</a>
-        </li>
-        <li>
-          <a href="" aria-current="page">Моноподы для селфи</a>
-        </li>
-      </ul>
-    </nav>
+    <ul>
+      <li>
+        <a>Главная</a>
+      </li>
+      <li>
+        <a>Список моноподов</a>
+      </li>
+      <li>
+        Моноподы для селфи
+      </li>
+    </ul>
     <section>
       <h2>Фильтр товаров</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Цвет</legend>
           <ul>
             <li>
-              <input type="checkbox" name="black" id="filter-color-black" checked>
+              <input type="checkbox" name="filter-color" id="filter-color-black" value="black" checked>
               <label for="filter-color-black">
                 Черный
               </label>
             </li>
             <li>
-              <input type="checkbox" name="white" id="filter-color-white">
+              <input type="checkbox" name="filter-color" id="filter-color-white" value="white">
               <label for="filter-color-white">
                 Белый
               </label>
             </li>
             <li>
-              <input type="checkbox" name="blue" id="filter-color-blue" checked>
+              <input type="checkbox" name="filter-color" id="filter-color-blue" value="blue" checked>
               <label for="filter-color-blue">
                 Синий
               </label>
             </li>
             <li>
-              <input type="checkbox" name="red" id="filter-color-red"checked>
+              <input type="checkbox" name="filter-color" id="filter-color-red" value="red" checked>
               <label for="filter-color-red">
                 Красный
               </label>
             </li>
             <li>
-              <input type="checkbox" name="pink" id="filter-color-pink">
+              <input type="checkbox" name="filter-color" id="filter-color-pink" value="pink">
               <label for="filter-color-pink">
                 Розовый
               </label>
@@ -121,13 +119,13 @@
           <legend>Bluetooth</legend>
           <ul>
             <li>
-              <input type="radio" name="filter-bluetooth" id="filter-bluetooth-true" checked>
+              <input type="radio" name="filter-bluetooth" id="filter-bluetooth-true" value="true" checked>
               <label for="filter-bluetooth-true">
                 Есть
               </label>
             </li>
             <li>
-              <input type="radio" name="filter-bluetooth" id="filter-bluetooth-false">
+              <input type="radio" name="filter-bluetooth" id="filter-bluetooth-false" value="false">
               <label for="filter-bluetooth-false">
                 Нет
               </label>
@@ -177,15 +175,15 @@
     </a>
     <ul>
       <li>
-        <a href="" aria-label="Форма входа на сайт">Войти</a>
+        <a href="">Войти</a>
       </li>
     </ul>
     <ul>
       <li>
-        <a href="" aria-label="Сравнение выбранных товаров">Сравнить</a>
+        <a href="">Сравнить</a>
       </li>
       <li>
-        <a href="" aria-label="Просмотр корзины">Корзина</a>
+        <a href="">Корзина</a>
       </li>
     </ul>
     <p>г. Москва, ул. Строителей, 15</p>
