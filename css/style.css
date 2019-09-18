@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  src: local("OpenSans"),
+       url("../font/opensans.woff2") format("woff2"),
+       url("../font/opensans.woff") format("woff");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 300;
+  src: local("OpenSans-Light"),
+       url("../font/opensanslight.woff2") format("woff2"),
+       url("../font/opensanslight.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 800;
+  src: local("Gilroy-ExtraBold"),
+       url("../font/gilroyextrabold.woff2") format("woff2"),
+       url("../font/gilroyextrabold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 300;
+  src: local("Gilroy-Light"),
+       url("../font/gilroyextrabold.woff2") format("woff2"),
+       url("../font/gilroyextrabold.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.heading {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  font-weight: 800;
+}
+.button {
+  text-align: center;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  font-weight: 800;
+  color: #000000;
+}
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.text {
+  color: #464646;
+}
+
+.header {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+.header a {
+  color: #000000;
+}
+.header a:hover,
+.header a:focus {
+  opacity: 0.6;
+}
+.header a:active {
+  opacity: 0.3;
+}
+.header ul {
+  list-style-type: none;
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.6;
+}
+.logo:active {
+  opacity: 0.3;
+}
+
+.search-input {
+  background-color: transparent;
+}
+.search-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.search:hover .search-input::placeholder,
+.search-input:focus::placeholder{
+  color: rgba(0, 0, 0, 0.6);
+}
+.search-button {
+  opacity: 0;
+  background-color: transparent;
+}
+.search-button:hover,
+.search-button:focus {
+  color: #ffffff;
+  background-color: #000000;
+  opacity: 1;
+}
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.search-input:focus + .search-button,
+.search:hover .search-button,
+.search-button:focus {
+  opacity: 1;
+}
+
+.main-nav .nav-item {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  font-weight: 800;
+}
+.nav-submenu a {
+  line-height: 36px;
+}
+
+
+.about-list {
+  list-style-type: circle; /*  временная замена  */
+}
+.about-list li {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+.footer {
+  background-color: #464646;
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer a,
+.footer p {
+  color: #ffffff;
+}
+
+.user-footer a,
+.options-footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.user-footer a:hover,
+.user-footer a:focus,
+.options-footer a:hover,
+.options-footer a:focus {
+  color: #ffffff;
+}
+.user-footer a:active,
+.options-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav-footer .nav-item {
+  color: #ffffff;
+}
+.main-nav-footer .nav-item:hover,
+.main-nav-footer .nav-item:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+.main-nav-footer .nav-item:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

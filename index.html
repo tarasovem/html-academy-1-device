@@ -3,23 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин гаджетов «Девайс»</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <a>
+    <header class="header">
+      <a class="logo">
         <img src="img/svg/logo-device.svg" alt="Логотип магазина «Device»" width="160" height="32">
       </a>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <label for="search">Поиск по сайту</label>
-        <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-        <button class="visually-hidden" type="submit">Найти</button>
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search">Поиск по сайту</label>
+        <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту" required>
+        <button class="search-button" type="submit">Найти</button>
       </form>
-      <ul>
+      <ul class="user">
         <li>
           <a href="">Войти</a>
         </li>
       </ul>
-      <ul>
+      <ul class="options">
         <li>
           <a href="">Сравнить</a>
         </li>
@@ -27,11 +29,11 @@
           <a href="">Корзина</a>
         </li>
       </ul>
-      <nav>
+      <nav class="main-nav">
         <ul>
           <li>
-            <a href="">Каталог товаров</a>
-            <ul>
+            <a class="nav-item" href="">Каталог товаров</a>
+            <ul class="nav-submenu">
               <li>
                 <a href="">Виртульная реальность</a>
               </li>
@@ -53,38 +55,38 @@
             </ul>
           </li>
           <li>
-            <a href="">Доставка</a>
+            <a class="nav-item" href="">Доставка</a>
           </li>
           <li>
-            <a href="">Гарантия</a>
+            <a class="nav-item" href="">Гарантия</a>
           </li>
           <li>
-            <a href="">Контакты</a>
+            <a class="nav-item" href="">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <!--   Разметка, выделенная красным   -->
-      <section>
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые линии</li>
+      <section class="about">
+        <h2 class="heading">О нас</h2>
+        <p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="about-list">
+          <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="">Подробнее о нас</a>
+        <a class="button" href="">Подробнее о нас</a>
       </section>
       <section>
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <h2 class="heading">Контакты</h2>
+        <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img src="img/map.jpg" alt="Офис компании по адресу город Москва, улица Строителей, дом 12" width="560" height="222">
-        <a>Напишите нам</a>
+        <a class="button">Напишите нам</a>
       </section>
     </main>
-    <section>
+    <section style="display: none;">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -109,21 +111,21 @@
       </form>
       <button type="button">Закрыть</button>
     </section>
-    <section>
+    <section style="display: none;">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map.jpg" alt="Офис компании по адресу город Москва, улица Строителей, дом 12" width="560" height="222">
       <button type="button">Закрыть</button>
     </section>
-    <footer>
-      <a>
-        <img src="img/svg/logo-device.svg" alt="Логотип магазина «Device»" width="160" height="32">
+    <footer class="footer">
+      <a class="logo">
+        <img src="img/svg/logo-device-footer.svg" alt="Логотип магазина «Device»" width="160" height="32">
       </a>
       <ul>
-        <li>
+        <li class="user user-footer">
           <a href="">Войти</a>
         </li>
       </ul>
-      <ul>
+      <ul class="options options-footer">
         <li>
           <a href="">Сравнить</a>
         </li>
@@ -132,15 +134,15 @@
         </li>
       </ul>
       <p>г. Москва, ул. Строителей, 15</p>
-      <ul>
+      <ul class="main-nav main-nav-footer">
         <li>
-          <a href="">Доставка</a>
+          <a class="nav-item" href="">Доставка</a>
         </li>
         <li>
-          <a href="">Гарантия</a>
+          <a class="nav-item" href="">Гарантия</a>
         </li>
         <li>
-          <a href="">Контакты</a>
+          <a class="nav-item" href="">Контакты</a>
         </li>
       </ul>
       <p>Тел.: <a href="tel:+74954959595" aria-label="Телефонный номер компании «Device»">+7 (495) 495-95-95</a></p>
