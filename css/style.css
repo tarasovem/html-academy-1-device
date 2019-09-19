@@ -48,6 +48,7 @@ body {
   line-height: 30px;
   font-weight: 300;
   color: #000000;
+  background-color: #ffffff;
 }
 
 .heading {
@@ -184,6 +185,62 @@ body {
 }
 .main-nav-footer .nav-item:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumb {
+  list-style-type: none;
+}
+.breadcrumb li {
+  font-size: 14px;
+  line-height: 24px;
+}
+.breadcrumb li,
+.breadcrumb a {
+  color: rgba(0, 0, 0, 0.3);
+}
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+.breadcrumb a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filter legend {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+.filter ul {
+  list-style-type: none;
+}
+.filter label {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.goods-list {
+  list-style-type: none;
+}
+.goods-item a {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+.goods-item a:hover,
+.goods-item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+.goods-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.goods-item p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #464646;
 }
 
 .visually-hidden {
