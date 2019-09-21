@@ -82,7 +82,6 @@ body {
   font-weight: 800;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -94,31 +93,36 @@ body {
   overflow: hidden;
 }
 
-/*  Шапка сайта  */
 .header {
+  margin-top: 40px;
   background-color: rgba(240, 197, 46, 0.5);
+  outline: 1px solid red;
+  min-height: 300px;
 }
 
-.header a:hover,
-.header a:focus {
+.header .logo:hover,
+.header .logo:focus,
+.footer .logo:hover,
+.footer .logo:focus,
+.tools-menu a:hover,
+.tools-menu a:focus,
+.main-nav-footer .item-link:hover,
+.main-nav-footer .item-link:focus,
+.item-submenu a:hover,
+.item-submenu a:focus {
   opacity: 0.6;
 }
 
-.header a:active {
+.header .logo:active,
+.footer .logo:active,
+.tools-menu a:active,
+.main-nav-list .item-link:active,
+.item-submenu a:active {
   opacity: 0.3;
 }
 
 .header ul {
   list-style-type: none;
-}
-
-.logo:hover,
-.logo:focus {
-  opacity: 0.6;
-}
-
-.logo:active {
-  opacity: 0.3;
 }
 
 .header-search .search-input {
@@ -146,7 +150,7 @@ body {
   opacity: 1;
 }
 
-.header-search.search-button:active {
+.header-search .search-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
