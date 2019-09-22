@@ -68,6 +68,8 @@ body {
   letter-spacing: 3.6px;
   font-weight: 800;
   color: #000000;
+  text-transform: uppercase;
+  padding: 14px 41px;
 }
 
 .button:active {
@@ -78,8 +80,14 @@ body {
   font-family: "Gilroy", "Arial Black", sans-serif;
   font-size: 47px;
   line-height: 48px;
-  letter-spacing: 0.47px;
   font-weight: 800;
+  margin: 0;
+}
+
+.container {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden {
@@ -94,10 +102,17 @@ body {
 }
 
 .header {
+  position: relative;
   margin-top: 40px;
   background-color: rgba(240, 197, 46, 0.5);
-  outline: 1px solid red;
   min-height: 300px;
+  padding: 33px 60px 0;
+}
+
+.header .logo {
+  position: absolute;
+  left: 60px;
+  top: -18px;
 }
 
 .header .logo:hover,
@@ -106,6 +121,8 @@ body {
 .footer .logo:focus,
 .tools-menu a:hover,
 .tools-menu a:focus,
+.main-nav-list .item-link:hover,
+.main-nav-list .item-link:focus,
 .main-nav-footer .item-link:hover,
 .main-nav-footer .item-link:focus,
 .item-submenu a:hover,
@@ -121,12 +138,16 @@ body {
   opacity: 0.3;
 }
 
-.header ul {
-  list-style-type: none;
+.header-search {
+  padding-left: 36px;
+
 }
 
 .header-search .search-input {
   background-color: transparent;
+  letter-spacing: -0.1px;
+  border: none;
+  width: 352px;
 }
 
 .header-search .search-input::placeholder {
@@ -141,6 +162,9 @@ body {
 .header-search .search-button {
   opacity: 0;
   background-color: transparent;
+  padding: 8px 18px;
+  line-height: 30px;
+  border: 2px solid #000000;
 }
 
 .header-search .search-button:hover,
@@ -155,16 +179,49 @@ body {
 }
 
 .header-search .search-input:focus + .search-button,
-.header-search:hover .search-button,
+.header-search:hover,
 .header-search .search-button:focus {
   opacity: 1;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.user-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin: 0 auto 0 62px;
+  align-items: center;
+}
+
+.user-menu a {
+  padding-left: 27px;
+}
+
+.tools-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.tools-menu a {
+  padding-left: 24px;
+}
+
+.tools-menu li:not(:first-child) {
+  margin-left: 42px;
 }
 
 .user-menu a,
 .tools-menu a {
   color: #000000;
 }
-
 
 .user-menu a:hover,
 .user-menu a:focus,
@@ -178,6 +235,14 @@ body {
   opacity: 0.3;
 }
 
+.main-nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-nav-list .item-link {
   font-family: "Gilroy", "Arial Black", sans-serif;
   font-size: 18px;
@@ -185,19 +250,72 @@ body {
   letter-spacing: 3.6px;
   font-weight: 800;
   color: #000000;
+  text-transform: uppercase;
+  margin-right: -3.6px;
 }
+
+.main-nav-list .submenu-title {
+  padding-right: 32px;
+  margin-right: auto;
+}
+
+.main-nav-list .item-submenu {
+  display: none;
+}
+
 
 .item-submenu a {
   line-height: 36px;
   color: #000000;
 }
 
+.main-nav-list .item-delivery {
+  margin-left: auto;
+}
+
+.main-nav-list .item-guarantee {
+  margin-left: 38px;
+}
+
+.main-nav-list .item-contacts {
+  margin-left: 112px;
+}
+
+.section-wrapper {
+  display: flex;
+  margin-bottom: 86px;
+}
+
+.about,
+.contacts {
+  width: 50%;
+  padding-top: 52px;
+}
+
+.about .heading,
+.contacts .heading {
+  margin-bottom: 42px;
+}
+
+.about {
+  padding-right: 120px;
+}
+
 .about-text {
   color: #464646;
+  letter-spacing: -0.2px;
+}
+
+.about-text:not(:last-of-type) {
+  margin-bottom: 30px;
+  letter-spacing: normal;
 }
 
 .about-list {
   list-style-type: circle; /*  временная замена  */
+  margin-top: 66px;
+  padding-left: 35px;
+  margin-bottom: 60px;
 }
 
 .about-list li {
@@ -207,26 +325,93 @@ body {
   font-weight: 800;
 }
 
+.about-button {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.contacts {
+  padding-left: 18px;
+}
+
 .contacts-text {
   color: #464646;
+  margin-bottom: 40px;
+}
+
+.contacts-map {
+  margin-bottom: 64px;
 }
 
 .footer {
   background-color: #464646;
+  padding-top: 65px;
+  padding-bottom: 66px;
 }
 
-.footer ul {
+.footer .logo {
+  margin-right: auto;
+}
+
+.footer .footer-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.user-menu-footer .entrance {
+  margin-left: auto;
+}
+
+.user-menu-footer .entrance-link {
+  padding-left: 24px;
+}
+
+.footer-row:first-child {
+  margin-bottom: 20px;
+}
+
+.footer-row:nth-child(2) {
+  margin-bottom: 60px;
+}
+
+.footer-row:last-child {
+
+}
+
+.footer-row .user-menu-footer {
+  display: flex;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footer a,
-.footer p {
-  color: #ffffff;
+.footer-row .tools-menu-footer {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footer-address,
-.footer-phone {
-  color: #ffffff;
+.tools-menu-footer .comparison {
+  margin-left: 54px;
+
+}
+
+.tools-menu-footer .comparison-link {
+  padding-left: 10px;
+}
+
+.tools-menu-footer .basket {
+  margin-left: 41px;
+}
+
+.tools-menu-footer .basket-link {
+  padding-left: 24px;
+}
+
+.footer-nav-list li:not(:first-child) {
+  margin-left: 34px;
 }
 
 .footer-nav-list .item-link {
@@ -236,6 +421,7 @@ body {
   letter-spacing: 3.6px;
   font-weight: 800;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .user-menu-footer a,
@@ -255,6 +441,39 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav-list {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  padding: 5px 0 0 0;
+}
+
+.footer-address {
+  margin-right: 164px;
+}
+
+.footer-phone {
+  margin-left: auto;
+}
+
+.footer-address,
+.footer-phone {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer-address,
+.footer-phone,
+.footer-phone a {
+  color: #ffffff;
+}
+
 .main-nav-footer .item-link {
   color: #ffffff;
 }
@@ -266,6 +485,12 @@ body {
 
 .footer-nav-list .item-link:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.social-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs {
@@ -333,3 +558,21 @@ body {
   line-height: 24px;
   color: #464646;
 }
+
+.main-stub {
+  height: 1478px; /*  высота разметки под красным фоном  */
+}
+
+.blue {
+  outline: 1px dashed royalblue;
+}
+.red {
+  outline: 1px dashed crimson;
+}
+.green {
+  outline: 1px dashed lightseagreen;
+}
+.yellow {
+  outline: 1px dotted yellow;
+}
+
