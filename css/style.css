@@ -69,7 +69,7 @@ body {
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
-  padding: 14px 41px;
+  padding: 7px 41px;
 }
 
 .button:active {
@@ -105,8 +105,12 @@ body {
   position: relative;
   margin-top: 40px;
   background-color: rgba(240, 197, 46, 0.5);
-  min-height: 300px;
+  min-height: 186px;
   padding: 33px 60px 0;
+}
+
+.header.main-page {
+  min-height: 300px;
 }
 
 .header .logo {
@@ -493,8 +497,26 @@ body {
   margin: 0;
 }
 
+.catalog-wrapper.container {
+  display: flex;
+}
+
+.catalog-page h1 {
+  letter-spacing: 0.5px;
+  margin-top: 37px;
+  padding: 0 60px;
+}
+
 .breadcrumbs {
   list-style-type: none;
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 46px;
+  padding: 0 60px;
+}
+
+.breadcrumbs li:not(:last-child) {
+  margin-right: 38px;
 }
 
 .breadcrumbs li {
@@ -516,24 +538,78 @@ body {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.filter legend {
+.title-stub {
+  height: 70px;
+  width: 100vw;
+  background-color: #d9d9d9;
+  color: #7a7a7a;
+  text-align: center;
+  font-size: 40px;
+  line-height: 70px;
+}
+
+.filter {
+  width: 28.2%;
+  padding-left: 60px;
+}
+
+.filter-form {
+  margin-top: 209px;
+}
+
+.filter-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-form fieldset:last-of-type {
+
+}
+
+.filter-form legend {
   font-family: "Gilroy", "Arial Black", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
+  padding-top: 12px;
 }
 
-.filter ul {
+.filter-list {
   list-style-type: none;
+  padding-left: 22px;
+  margin-top: 18px;
+  margin-bottom: 31px;
 }
 
-.filter label {
+.filter-form label {
   font-size: 14px;
   line-height: 40px;
 }
 
+.filter-form-color {
+
+}
+
+.goods {
+  width: 71.8%;
+  padding-top: 69px;
+}
+
 .goods-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goods-item {
+  margin-left: 40px;
+}
+
+.goods-item:nth-child(2n-1) {
+  margin-left: 72px;
 }
 
 .goods-item a {
@@ -557,6 +633,16 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #464646;
+}
+
+.goods-item .item-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-description h3 {
+  width: 255px;
 }
 
 .main-stub {
