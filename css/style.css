@@ -102,13 +102,7 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #ffffff 40px,
-    rgba(240, 197, 46, 0.5) 40px,
-    rgba(240, 197, 46, 0.5) 100%
-  );
+  background-image: linear-gradient(to bottom, #ffffff 40px, rgba(240, 197, 46, 0.5) 40px);
   background-color: rgba(240, 197, 46, 0.5);
   min-height: 226px;
   padding: 23px 60px 0;
@@ -263,21 +257,21 @@ body {
   display: none;
 }
 
-
-.item-submenu a {
+.submenu-list a {
   line-height: 36px;
   color: #000000;
 }
 
-.main-nav-list .item-delivery {
+.main-nav-item_delivery {
   margin-left: auto;
 }
 
-.main-nav-list .item-guarantee {
+.main-nav-item_guarantee {
   margin-left: 38px;
+
 }
 
-.main-nav-list .item-contacts {
+.main-nav-item_contacts {
   margin-left: 112px;
 }
 
