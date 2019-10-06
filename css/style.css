@@ -118,8 +118,8 @@ body {
 .footer .logo:focus,
 .tools-menu a:hover,
 .tools-menu a:focus,
-.main-nav-list .item-link:hover,
-.main-nav-list .item-link:focus,
+.main-nav-list .item-link:not(.submenu-title):hover,
+.main-nav-list .item-link:not(.submenu-title):focus,
 .main-nav-footer .item-link:hover,
 .main-nav-footer .item-link:focus,
 .item-submenu a:hover,
@@ -130,7 +130,7 @@ body {
 .header .logo:active,
 .footer .logo:active,
 .tools-menu a:active,
-.main-nav-list .item-link:active,
+.main-nav-list .item-link:not(.submenu-title):active,
 .item-submenu a:active {
   opacity: 0.3;
 }
@@ -231,6 +231,14 @@ body {
   transform: translateY(-50%);
 }
 
+.user-logout {
+  opacity: 0.3;
+}
+
+.user-logout:hover {
+  opacity: 1;
+}
+
 .tools-menu {
   list-style-type: none;
   padding: 0;
@@ -252,7 +260,7 @@ body {
   position: relative;
 }
 
-.tools-compare a::before {
+.header .tools-compare a::before {
   content: "";
   position: absolute;
   width: 10px;
@@ -320,6 +328,15 @@ body {
   margin-right: auto;
 }
 
+.main-nav-list .submenu-title:hover,
+.main-nav-list .submenu-title:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-nav-list .submenu-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .main-nav-list .submenu-title::after {
   content: "";
   position: absolute;
@@ -331,9 +348,21 @@ body {
   top: 50%;
   transform: translateY(-50%);
   right: 5px;
+  opacity: 0.3;
+}
+
+.submenu-title:hover + .submenu-list {
+  display: flex;
 }
 
 .main-nav-list .submenu-list {
+  list-style-type: none;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 0;
+  flex-direction: column;
+  max-height: 160px;
+  flex-wrap: wrap;
   display: none;
 }
 
@@ -432,12 +461,65 @@ body {
   justify-content: space-between;
 }
 
-.user-menu-footer .entrance {
+.user-profile-footer {
   margin-left: auto;
+  padding-left: 27px;
+  position: relative;
 }
 
-.user-menu-footer .entrance-link {
-  padding-left: 24px;
+.user-profile-footer:hover::after {
+  opacity: 0.6;
+}
+
+.user-profile-footer a::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  background-image: url(../img/svg/user-footer.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.user-menu-footer li:not(:first-child) {
+  margin-left: 19px;
+}
+
+.user-profile-footer:hover a,
+.user-profile-footer:focus a,
+.tools-menu-footer .tools-compare-footer:hover a,
+.tools-menu-footer .tools-compare-footer:focus a,
+.tools-menu-footer .tools-cart-footer:hover a,
+.tools-menu-footer .tools-cart-footer:focus a {
+  color: #ffffff;
+}
+
+.user-profile-footer:hover a::before,
+.user-profile-footer:focus a::before,
+.tools-menu-footer .tools-compare-footer:hover::before,
+.tools-menu-footer .tools-compare-footer:focus::before,
+.tools-menu-footer .tools-cart-footer:hover::before,
+.tools-menu-footer .tools-cart-footer:focus::before {
+  opacity: 0.6;
+}
+
+.user-profile-footer:active a,
+.tools-menu-footer .tools-compare-footer:active a,
+.tools-menu-footer .tools-cart-footer:active a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-profile-footer:active a::before,
+.tools-menu-footer .tools-compare-footer:active::before,
+.tools-menu-footer .tools-cart-footer:active::before {
+  opacity: 0.3;
+}
+
+.user-logout-footer:hover {
+  opacity: 1;
 }
 
 .footer-row:first-child {
@@ -466,20 +548,48 @@ body {
   margin: 0;
 }
 
-.tools-menu-footer .comparison {
-  margin-left: 54px;
-
+.tools-menu-footer .tools-compare-footer {
+  margin-left: 43px;
+  padding-left: 20px;
+  position: relative;
 }
 
-.tools-menu-footer .comparison-link {
+.tools-menu-footer .tools-compare-footer::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/svg/compare-footer.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tools-compare-footer {
   padding-left: 10px;
 }
 
-.tools-menu-footer .basket {
+.tools-cart-footer {
   margin-left: 41px;
+  position: relative;
 }
 
-.tools-menu-footer .basket-link {
+.tools-cart-footer::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/svg/cart-footer.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tools-cart-footer a {
   padding-left: 24px;
 }
 
@@ -502,8 +612,6 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.user-menu-footer a:hover,
-.user-menu-footer a:focus,
 .tools-menu-footer a:hover,
 .tools-menu-footer a:focus {
   color: #ffffff;
@@ -514,7 +622,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-row {
+.footer-row:last-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -560,10 +668,75 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-line {
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+}
+
 .social-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  display: flex;
+  margin-left: -54px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.social-list a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.social-list li:not(:first-child) {
+  margin-left: 22px;
+}
+
+.social-list a:hover,
+.social-list a:focus {
+  opacity: 0.6;
+}
+
+.social-list a:active {
+  opacity: 0.1;
+}
+
+.social-facebook {
+  background-image: url(../img/svg/fb.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-instagram {
+  background-image: url(../img/svg/instagram.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-twitter {
+  background-image: url(../img/svg/twitter.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.developers {
+  width: 27px;
+  height: 35px;
+  display: block;
+  background-image: url(../img/svg/logo-html.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.developers:hover,
+.developers:focus {
+  opacity: 0.6;
+}
+
+.developers:active {
+  opacity: 0.3;
 }
 
 .catalog-wrapper.container {
