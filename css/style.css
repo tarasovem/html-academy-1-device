@@ -143,6 +143,23 @@ body {
   height: 100%;
 }
 
+.header-search {
+  position: relative;
+}
+
+.header-search::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/svg/search.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3px;
+}
+
 .header-search .search-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -192,8 +209,26 @@ body {
   align-items: center;
 }
 
-.user-menu a {
+.user-menu li:not(:first-child) {
+  margin-left: 19px;
+}
+
+.user-menu .user-profile {
+  position: relative;
   padding-left: 27px;
+}
+
+.user-menu .user-profile a::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  background-image: url(../img/svg/user.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 1px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .tools-menu {
@@ -210,6 +245,37 @@ body {
 
 .tools-menu li:not(:first-child) {
   margin-left: 42px;
+}
+
+.tools-compare a,
+.tools-cart a {
+  position: relative;
+}
+
+.tools-compare a::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/svg/compare.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tools-cart a::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/svg/cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 1px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .user-menu a,
@@ -249,11 +315,25 @@ body {
 }
 
 .main-nav-list .submenu-title {
+  position: relative;
   padding-right: 32px;
   margin-right: auto;
 }
 
-.main-nav-list .item-submenu {
+.main-nav-list .submenu-title::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/svg/plus.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+
+.main-nav-list .submenu-list {
   display: none;
 }
 
@@ -516,6 +596,23 @@ body {
 .breadcrumbs li,
 .breadcrumbs a {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a {
+  position: relative;
+}
+
+.breadcrumbs a::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  background-image: url(../img/svg/nav-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -22px;
 }
 
 .breadcrumbs a:hover,
