@@ -102,8 +102,7 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(to bottom, #ffffff 40px, rgba(240, 197, 46, 0.5) 40px);
-  background-color: rgba(240, 197, 46, 0.5);
+  background-image: linear-gradient(to bottom, #ffffff 40px, #f7e296 40px);
   min-height: 226px;
   padding: 23px 60px 0;
 }
@@ -323,6 +322,14 @@ body {
   margin-right: -3.6px;
 }
 
+.main-nav-item-submenu {
+  position: relative;
+}
+
+.main-nav-item-submenu:hover .submenu-list {
+  display: flex;
+}
+
 .main-nav-list .submenu-title {
   position: relative;
   padding-right: 32px;
@@ -352,25 +359,42 @@ body {
   opacity: 0.3;
 }
 
-.submenu-title:hover + .submenu-list,
-.submenu-list:hover {
-  display: flex;
-}
-
 .main-nav-list .submenu-list {
   list-style-type: none;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  padding-left: 0;
-  flex-direction: column;
-  max-height: 160px;
+  padding: 20px 460px 20px 60px;
+  width: 1160px;
+  height: 160px;
   flex-wrap: wrap;
   display: none;
+  position: absolute;
+  left: -60px;
+  background-color: #f7e296;
 }
 
 .submenu-list a {
   line-height: 36px;
   color: #000000;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.submenu-list li {
+  width: 200px;
+}
+
+.submenu-list li:nth-child(3n+1),
+.submenu-list li:nth-child(6) {
+width: 240px;
+}
+
+.submenu-list a:hover,
+.submenu-list a:focus {
+  opacity: 0.6;
+}
+
+.submenu-list a:active {
+  opacity: 0.3;
 }
 
 .main-nav-item-delivery {
@@ -530,10 +554,6 @@ body {
 
 .footer-row:nth-child(2) {
   margin-bottom: 60px;
-}
-
-.footer-row:last-child {
-
 }
 
 .footer-row .user-menu-footer {
@@ -824,10 +844,6 @@ body {
   margin: 0;
 }
 
-.filter-form fieldset:last-of-type {
-
-}
-
 .filter-form legend {
   font-family: "Gilroy", "Arial Black", sans-serif;
   font-size: 18px;
@@ -846,10 +862,6 @@ body {
 .filter-form label {
   font-size: 14px;
   line-height: 40px;
-}
-
-.filter-form-color {
-
 }
 
 .goods {
