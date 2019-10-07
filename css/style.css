@@ -109,7 +109,7 @@ body {
 }
 
 .header.main-page {
-  min-height: 300px;
+  min-height: 340px;
 }
 
 .header .logo:hover,
@@ -138,6 +138,7 @@ body {
 .header-search .search-input {
   background-color: transparent;
   padding-left: 36px;
+  padding-right: 20px;
   border: none;
   width: 352px;
   height: 100%;
@@ -351,7 +352,8 @@ body {
   opacity: 0.3;
 }
 
-.submenu-title:hover + .submenu-list {
+.submenu-title:hover + .submenu-list,
+.submenu-list:hover {
   display: flex;
 }
 
