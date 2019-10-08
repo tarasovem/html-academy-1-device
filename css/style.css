@@ -69,7 +69,13 @@ body {
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
-  padding: 7px 41px;
+  padding: 9px 41px;
+  background-image: linear-gradient(to bottom, #ffffff 16px, #f0c52e 16px, #f0c52e 24px, #ffffff 24px);
+}
+
+.button:hover,
+.button:active {
+  background-image: linear-gradient(to bottom, #f0c52e, #f0c52e);
 }
 
 .button:active {
