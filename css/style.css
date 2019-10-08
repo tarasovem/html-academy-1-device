@@ -435,6 +435,17 @@ width: 240px;
 .about .heading,
 .contacts .heading {
   margin-bottom: 42px;
+  position: relative;
+}
+
+.about .heading::before,
+.contacts .heading::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+  top: -53px;
 }
 
 .about {
