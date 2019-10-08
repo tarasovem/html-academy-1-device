@@ -94,7 +94,8 @@
       </div>
 
     </main>
-    <section class="modal-feedback">
+    <!--  Модальное окно (обратная связь) -->
+    <section class="modal-feedback" style="display: none">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-form-item">
@@ -119,10 +120,12 @@
       </form>
       <button class="button-close" type="button" aria-label="Закрыть"></button>
     </section>
-    <section style="display: none;">
+    <!--  Модальное окно (карта)-->
+<!--    <section style="display: none;">-->
+    <section class="modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/map.jpg" alt="Офис компании по адресу город Москва, улица Строителей, дом 12" width="560" height="222">
-      <button type="button">Закрыть</button>
+      <img src="img/map-big.jpg" alt="Офис компании по адресу город Москва, улица Строителей, дом 12" width="560" height="222">
+      <button class="button-close" type="button" aria-label="Закрыть"></button>
     </section>
     <footer class="footer">
       <div class="container">
