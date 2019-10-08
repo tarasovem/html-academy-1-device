@@ -1060,6 +1060,114 @@ width: 240px;
   margin-bottom: 46px;
 }
 
+.modal-feedback {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 960px;
+  height: 553px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  padding: 78px 100px 80px;
+
+  /*outline: 1px solid tomato;*/
+}
+.modal-feedback .feedback-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modal-feedback .feedback-form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.modal-feedback .feedback-form-item:nth-child(1),
+.modal-feedback .feedback-form-item:nth-child(2) {
+  flex-basis: 360px;
+}
+
+.modal-feedback .feedback-form-item:nth-child(3) {
+  flex-basis: 100%;
+}
+
+.modal-feedback .label {
+  font-size: 18px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+
+.modal-feedback textarea {
+  height: 156px;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  padding: 16px;
+}
+
+.modal-feedback input::placeholder,
+.modal-feedback textarea::placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {
+  background-color: #eaeaea;
+}
+
+.modal-feedback input:focus,
+.modal-feedback textarea:focus {
+  outline: 3px solid #f0c52e;
+  background-color: #ffffff;
+}
+
+.modal-feedback input:not(:placeholder-shown):invalid,
+.modal-feedback textarea:not(:placeholder-shown):invalid {
+  background-color: #f6dada;
+  color: rgba(70, 70, 70, 0.4);
+  outline: 5px solid rgba(0, 103, 244, 0.247);;
+  outline-offset: -3px;
+}
+
+
+.modal-feedback .button {
+  margin-top: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.button-close {
+  border: none;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-image: url(../img/svg/modal-close.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 22px;
+  right: 22px;
+  opacity: 0.5;
+}
+
+.button-close:hover,
+.button-close:focus {
+  opacity: 1;
+}
+
+.button-close:active {
+  opacity: 0.3;
+}
+
 .main-stub {
   height: 1478px; /*  высота разметки под красным фоном  */
 }

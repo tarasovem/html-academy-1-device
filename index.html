@@ -94,30 +94,30 @@
       </div>
 
     </main>
-    <section style="display: none;">
+    <section class="modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="feedback-name">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-form-item">
+          <label class="label" for="feedback-name">
             Ваше имя:
           </label>
-          <input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия">
+          <input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$" required>
         </p>
-        <p>
-          <label for="feedback-email">
+        <p class="feedback-form-item">
+          <label class="label" for="feedback-email">
             Ваш e-mail:
           </label>
-          <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com">
+          <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
         </p>
-        <p>
-          <label for="feedback-message">
+        <p class="feedback-form-item">
+          <label class="label" for="feedback-message">
             Текст письма:
           </label>
-          <textarea name="feedback-message" id="feedback-message" placeholder="В свободной форме"></textarea>
+          <textarea name="feedback-message" id="feedback-message" placeholder="В свободной форме" required></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
-      <button type="button">Закрыть</button>
+      <button class="button-close" type="button" aria-label="Закрыть"></button>
     </section>
     <section style="display: none;">
       <h2 class="visually-hidden">Как до нас добраться</h2>
