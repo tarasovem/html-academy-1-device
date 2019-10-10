@@ -161,11 +161,10 @@ body {
 .header-search::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 18px;
   left: 3px;
   width: 16px;
   height: 16px;
-  margin-top: -7px;
   background-image: url("../img/svg/search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -229,14 +228,13 @@ body {
   padding-left: 27px;
 }
 
-.user-menu .user-profile a::before {
+.user-menu .user-profile::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 9px;
   left: 1px;
   width: 13px;
   height: 12px;
-  margin-top: -6px;
   background-image: url("../img/svg/user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
