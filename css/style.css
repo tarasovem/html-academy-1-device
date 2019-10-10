@@ -228,7 +228,7 @@ body {
   padding-left: 27px;
 }
 
-.user-menu .user-profile::before {
+.user-menu .user-profile a::before {
   content: "";
   position: absolute;
   top: 9px;
