@@ -165,10 +165,10 @@ body {
   left: 3px;
   width: 16px;
   height: 16px;
+  margin-top: -7px;
   background-image: url("../img/svg/search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateY(-50%);
 }
 
 .header-search .search-input::placeholder {
@@ -236,10 +236,10 @@ body {
   left: 1px;
   width: 13px;
   height: 12px;
+  margin-top: -6px;
   background-image: url("../img/svg/user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateY(-50%);
 }
 
 .user-logout {
@@ -278,10 +278,10 @@ body {
   left: 4px;
   width: 10px;
   height: 10px;
+  margin-top: -4px;
   background-image: url("../img/svg/compare.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateY(-50%);
 }
 
 .tools-cart a::before {
@@ -291,10 +291,10 @@ body {
   left: 1px;
   width: 12px;
   height: 12px;
+  margin-top: -6px;
   background-image: url("../img/svg/cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateY(-50%);
 }
 
 .user-menu a,
@@ -363,11 +363,11 @@ body {
   right: 5px;
   width: 16px;
   height: 16px;
+  margin-top: -8px;
   background-image: url("../img/svg/plus.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
-  transform: translateY(-50%);
 }
 
 .main-nav-list .submenu-list {
@@ -539,14 +539,14 @@ body {
   left: 0;
   width: 13px;
   height: 12px;
+  margin-top: -6px;
   background-image: url("../img/svg/user-footer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateY(-50%);
 }
 
 .footer-user-menu li:not(:first-child) {
-  margin-left: 19px;
+  margin-left: 23px;
 }
 
 .footer-user-profile:hover a,
@@ -618,10 +618,10 @@ body {
   left: 0;
   width: 10px;
   height: 10px;
+  margin-top: -4px;
   background-image: url("../img/svg/compare-footer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateY(-50%);
 }
 
 .footer-tools-compare {
@@ -640,10 +640,10 @@ body {
   left: 0;
   width: 12px;
   height: 12px;
+  margin-top: -6px;
   background-image: url("../img/svg/cart-footer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateY(-50%);
 }
 
 .footer-tools-cart a {
@@ -835,10 +835,10 @@ body {
   right: -22px;
   width: 4px;
   height: 7px;
+  margin-top: -3px;
   background-image: url("../img/svg/nav-arrow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateY(-50%);
 }
 
 .breadcrumbs a:hover,
