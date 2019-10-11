@@ -423,6 +423,22 @@ body {
   margin-bottom: 86px;
 }
 
+.slider-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.slider-item {
+  display: flex;
+}
+
+.slider-title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+}
+
 .about {
   padding-right: 120px;
 }
