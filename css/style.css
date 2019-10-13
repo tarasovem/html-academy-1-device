@@ -424,12 +424,21 @@ body {
 }
 
 .slider-list {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
+  width: 100%;
   list-style-type: none;
 }
 
 .slider-item {
   display: flex;
+  width: 100%;
+}
+
+.slider-img,
+.slider-content {
+  width: 50%;
 }
 
 .slider-title {
@@ -437,6 +446,23 @@ body {
   font-size: 47px;
   line-height: 56px;
   font-family: "Gilroy", "Arial Black", sans-serif;
+}
+
+.slider-advantages td {
+  width: 160px;
+}
+
+.slider-advantages tr:nth-child(1) td{
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+.slider-advantages tr:nth-child(2) td{
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
 }
 
 .about {
