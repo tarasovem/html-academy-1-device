@@ -89,71 +89,78 @@
       </nav>
     </header>
     <main>
-      <section class="promo-slider">
-        <div class="container">
-          <div class="slider-controls">
-            <label for="product-1">Первый</label>
-            <label for="product-2">Второй</label>
-            <label for="product-3">Третий</label>
-          </div>
-          <ul class="slider-list">
-            <li class="slider-item" id="promo-slide-1">
-              <div class="slider-img">
-                <img src="img/slider-1.png" alt="Самая длинная селфи-палка">
-              </div>
-              <div class="slider-content">
-                <h3 class="slider-title">Делай селфи, как Бен Стиллер!</h3>
-                <p class="slider-description">
-                  Самая длинная палка для селфи доступна в нашем магазине.<br>
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
-                <a href="" class="button">Подробнее</a>
-                <table class="slider-advantages">
-                  <tr>
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                  <tr>
-                    <td>Длина палки</td>
-                    <td>Вес палки</td>
-                    <td>Материал</td>
-                  </tr>
-                </table>
-              </div>
-            </li>
-            <li class="slider-item" id="promo-slide-2" style="display: none;">
-              <div class="slide-img">
-                <img src="img/slider-2.png" alt="Мотивирующий фитнес-браслет">
-              </div>
-              <div class="slider-content">
-                <h3 class="slider-title">Худеем правильно!</h3>
-                <p class="slider-description">
-                  Мотивирующие фитнес-браслеты помогут найти в себе силы
-                  не пропускать занятия и соблюдать диету.
-                </p>
-                <a href="" class="button">Подробнее</a>
-                <table>
-                  <tr>
-                    <td>48 часов</td>
-                  </tr>
-                  <tr>
-                    <td>Без подзарядки</td>
-                  </tr>
-                </table>
-              </div>
-            </li>
-            <li class="slider-item" id="promo-slide-3" style="display: none;">
-              <div class="slide-img">
-                <img src="img/slider-3.png" alt="Квадрокоптер с лазером">
-              </div>
+      <section class="promo-slider container">
+        <input class="visually-hidden" type="radio" id="gadget-1" name="toggle"
+               checked>
+        <input class="visually-hidden" type="radio" id="gadget-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="gadget-3" name="toggle">
+        <div class="slider-controls">
+          <label for="gadget-1"><i>Первый</i></label>
+          <label for="gadget-2"><i>Второй</i></label>
+          <label for="gadget-3"><i>Третий</i></label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item" id="promo-slide-1">
+            <div class="slider-img">
+              <img src="img/slider-1.png" alt="Самая длинная селфи-палка"
+                   width="384" height="486">
+            </div>
+            <div class="slider-content">
+              <h3 class="slider-title">Делай селфи,<br> как Бен Стиллер!</h3>
+              <p class="slider-description">
+                Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+              <a href="" class="button">Подробнее</a>
+              <table class="slider-advantages">
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr>
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="slider-item" id="promo-slide-2">
+            <div class="slider-img">
+              <img src="img/slider-2.png" alt="Мотивирующий фитнес-браслет"
+                   width="345" height="485">
+            </div>
+            <div class="slider-content">
+              <h3 class="slider-title">Худеем<br> правильно!</h3>
+              <p class="slider-description">
+                Мотивирующие фитнес-браслеты помогут найти в себе<br>
+                силы не пропускать занятия и соблюдать диету.
+              </p>
+              <a href="" class="button">Подробнее</a>
+              <table class="slider-advantages">
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+                <tr>
+                  <td>Без подзарядки</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="slider-item" id="promo-slide-3">
+            <div class="slider-img">
+              <img src="img/slider-3.png" alt="Квадрокоптер с лазером"
+                   width="526" height="334">
+            </div>
+            <div class="slider-content">
               <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
               <p class="slider-description">
-                Этот обычный, на первый взгляд, квадрокоптер оснащен
+                Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
               <a href="" class="button">Подробнее</a>
-              <table>
+              <table class="slider-advantages">
                 <tr>
                   <td>800 м</td>
                   <td>50 м</td>
@@ -163,12 +170,10 @@
                   <td>Радиус поражения</td>
                 </tr>
               </table>
-            </li>
-          </ul>
-
-        </div>
+            </div>
+          </li>
+        </ul>
       </section>
-      <div class="main-stub"></div><!--   Разметка, выделенная красным   -->
       <div class="container section-wrapper">
         <section class="about">
           <h2 class="heading">О нас</h2>
@@ -198,7 +203,8 @@
     <!--  Модальное окно (обратная связь) -->
     <section class="modal-feedback" style="display: none;">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru"
+            method="post">
         <p class="feedback-form-item">
           <label class="label" for="feedback-name">
             Ваше имя:
@@ -275,22 +281,29 @@
               <a class="item-link" href="">Контакты</a>
             </li>
           </ul>
-          <p class="footer-phone">Тел.: <a href="tel:+74954959595" aria-label="Телефонный номер компании «Device»">+7 (495) 495-95-95</a></p>
+          <p class="footer-phone">
+            Тел.: <a href="tel:+74954959595" aria-label="Телефонный номер
+            компании «Device»">+7 (495) 495-95-95</a>
+          </p>
         </div>
         <div class="footer-row">
           <div class="footer-line"></div>
           <ul class="social-list">
             <li>
-              <a class="social-facebook" href="https://ru-ru.facebook.com/" aria-label="Device в Facebook"></a>
+              <a class="social-facebook" href="https://ru-ru.facebook.com/"
+                 aria-label="Device в Facebook"></a>
             </li>
             <li>
-              <a class="social-instagram" href="https://www.instagram.com/?hl=ru" aria-label="Device в Instagram"></a>
+              <a class="social-instagram" href="https://www.instagram.com/?hl=ru"
+                 aria-label="Device в Instagram"></a>
             </li>
             <li>
-              <a class="social-twitter" href="https://twitter.com/?lang=ru" aria-label="Device в Twitter"></a>
+              <a class="social-twitter" href="https://twitter.com/?lang=ru"
+                 aria-label="Device в Twitter"></a>
             </li>
           </ul>
-          <a class="developers" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработчики сайта"></a>
+          <a class="developers" href="https://htmlacademy.ru/intensive/htmlcss"
+             aria-label="Разработчики сайта"></a>
         </div>
       </div>
     </footer>

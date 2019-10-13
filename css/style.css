@@ -371,6 +371,7 @@ body {
 .main-nav-list .submenu-list {
   position: absolute;
   left: -60px;
+  z-index: 10;
   display: none;
   flex-wrap: wrap;
   width: 1160px;
@@ -423,7 +424,32 @@ body {
   margin-bottom: 86px;
 }
 
-.slider-list {
+.promo-slider {
+  position: relative;
+  margin-top: -112px;
+}
+
+.promo-slider .slider-controls {
+  position: absolute;
+  top: 327px;
+  right: 83px;
+  z-index: 20;
+  font-size: 0;
+}
+
+.promo-slider .slider-controls label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 21px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.promo-slider .slider-list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -431,39 +457,99 @@ body {
   list-style-type: none;
 }
 
-.slider-item {
-  display: flex;
+.promo-slider .slider-item {
+  display: none;
   width: 100%;
 }
 
-.slider-img,
-.slider-content {
+.promo-slider .slider-img,
+.promo-slider .slider-content {
   width: 50%;
 }
 
-.slider-title {
+#promo-slide-1 .slider-img {
+  padding-left: 90px;
+}
+
+#promo-slide-2 .slider-img {
+  padding-top: 12px;
+  padding-left: 116px;
+}
+
+#promo-slide-3 .slider-img {
+  padding-top: 65px;
+  padding-left: 31px;
+}
+
+.promo-slider .slider-content {
+  padding-left: 14px;
+}
+
+.promo-slider .slider-title {
+  margin-top: 79px;
+  margin-bottom: 19px;
   font-weight: 800;
   font-size: 47px;
   line-height: 56px;
   font-family: "Gilroy", "Arial Black", sans-serif;
 }
 
-.slider-advantages td {
+.promo-slider .slider-description {
+  margin-bottom: 48px;
+  padding-right: 80px;
+}
+
+.promo-slider .button {
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.promo-slider .slider-advantages {
+  margin-top: 53px;
+  border-collapse: collapse;
+}
+
+.promo-slider .slider-advantages td {
   width: 160px;
 }
 
-.slider-advantages tr:nth-child(1) td{
+.promo-slider .slider-advantages td:nth-child(2) {
+  width: 138px;
+}
+
+.promo-slider .slider-advantages tr:nth-child(1) td {
   font-weight: 300;
   font-size: 36px;
   line-height: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.36px;
 }
 
-.slider-advantages tr:nth-child(2) td{
+.promo-slider .slider-advantages tr:nth-child(2) td {
   font-size: 13px;
-  line-height: 20px;
+  line-height: 32px;
   letter-spacing: 0.13px;
 }
+
+#gadget-1:checked ~ .slider-list #promo-slide-1,
+#gadget-2:checked ~ .slider-list #promo-slide-2,
+#gadget-3:checked ~ .slider-list #promo-slide-3 {
+  display: flex;
+}
+
+#gadget-1:checked ~ .slider-controls [for="gadget-1"] i,
+#gadget-2:checked ~ .slider-controls [for="gadget-2"] i,
+#gadget-3:checked ~ .slider-controls [for="gadget-3"] i {
+  position: relative;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+}
+
 
 .about {
   padding-right: 120px;
@@ -1223,8 +1309,3 @@ body {
 .button-close:active {
   opacity: 0.3;
 }
-
-.main-stub {
-  height: 1478px; /*  высота разметки под красным фоном  */
-}
-
