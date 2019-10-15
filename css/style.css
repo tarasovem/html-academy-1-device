@@ -806,22 +806,6 @@ body {
   -o-filter: grayscale(0);
   filter: grayscale(0);
 }
-/*
-.partners-item:nth-child(1) a {
-  background-image: url("../img/partners-1.png");
-}
-
-.partners-item:nth-child(2) a {
-  background-image: url("../img/partners-2.png");
-}
-
-.partners-item:nth-child(3) a {
-  background-image: url("../img/partners-3.png");
-}
-
-.partners-item:nth-child(4) a {
-  background-image: url("../img/partners-4.png");
-}*/
 
 .about {
   padding-right: 120px;
