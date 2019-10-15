@@ -482,7 +482,7 @@ body {
 }
 
 .promo-slider .slider-content {
-  padding-left: 14px;
+  padding-left: 18px;
   position: relative;
 }
 
@@ -618,6 +618,7 @@ body {
 
 .popular-description {
   margin-top: 33px;
+  margin-bottom: 0;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -633,6 +634,152 @@ body {
 
 .popular-link:active img {
   opacity: 0.3;
+}
+
+.service {
+  margin-top: 8px;
+  background-image: linear-gradient(to bottom, transparent 175px, #e5e5e5 175px);
+}
+
+.service .service-wrapper {
+  display: flex;
+  height: 461px;
+}
+
+.service .slider-controls {
+  position: relative;
+  display: flex;
+  flex-basis: 285px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 278px;
+  margin: 0;
+  padding-top: 13px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.service .slider-controls::after {
+  content: "";
+  position: absolute;
+  top: 73px;
+  right: 0;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+}
+
+.service .slider-controls li {
+  display: block;
+  width: 100%;
+}
+
+.service .slider-controls li:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.service .slider-controls label {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  width: 160px;
+  box-sizing: border-box;
+}
+
+.service .slider-list {
+  flex-grow: 1;
+  margin: 0;
+  padding-left: 115px;
+  list-style-type: none;
+}
+
+.service .slider-item {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right 67px top 158px;
+}
+
+.service .slider-item:nth-child(1) {
+  background-image: url("../img/svg/delivery.svg");
+}
+
+.service .slider-item:nth-child(2) {
+  background-image: url("../img/svg/warranty.svg");
+}
+
+.service .slider-item:nth-child(3) {
+  background-image: url("../img/svg/credit.svg");
+}
+
+#service-1:checked ~ .slider-list > #service-slide-1,
+#service-2:checked ~ .slider-list > #service-slide-2,
+#service-3:checked ~ .slider-list > #service-slide-3 {
+  display: flex;
+}
+
+#service-1:checked ~ .slider-controls [for="service-1"],
+#service-2:checked ~ .slider-controls [for="service-2"],
+#service-3:checked ~ .slider-controls [for="service-3"] {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: none;
+}
+
+#service-1:checked ~ .slider-controls [for="service-1"]::after,
+#service-1:checked ~ .slider-controls [for="service-1"]:hover [for="service-1"]::after,
+#service-2:checked ~ .slider-controls [for="service-2"]::after,
+#service-2:checked ~ .slider-controls [for="service-2"]:active::after,
+#service-3:checked ~ .slider-controls [for="service-3"]::after,
+#service-3:checked ~ .slider-controls [for="service-3"]:active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -120px;
+  width: 120px;
+  height: 42px;
+  background-color: #000000;
+}
+
+#service-1:not(:checked) ~ .slider-controls [for="service-1"]:active,
+#service-2:not(:checked) ~ .slider-controls [for="service-2"]:active,
+#service-3:not(:checked) ~ .slider-controls [for="service-3"]:active {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: none;
+}
+
+#service-1:not(:checked) ~ .slider-controls [for="service-1"]:active::after,
+#service-2:not(:checked) ~ .slider-controls [for="service-2"]:active::after,
+#service-3:not(:checked) ~ .slider-controls [for="service-3"]:active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -120px;
+  width: 120px;
+  height: 42px;
+  background-color: #000000;
+}
+
+.service .slider-title {
+  margin-top: 0;
+  margin-bottom: 31px;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  letter-spacing: 0.47px;
+}
+
+.service .slider-description {
+  margin: 0;
+  padding: 0;
+  width: 450px;
 }
 
 .about {
@@ -1392,4 +1539,9 @@ body {
 
 .button-close:active {
   opacity: 0.3;
+}
+
+
+.red {
+  outline: 1px solid crimson;
 }
