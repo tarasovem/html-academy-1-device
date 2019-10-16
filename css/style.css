@@ -1174,6 +1174,10 @@ body {
   opacity: 0.3;
 }
 
+.catalog {
+  background-image: linear-gradient(to right, #ebebeb 0, #ebebeb 25%, #ffffff 25%, #ffffff 100%);
+}
+
 .catalog-wrapper.container {
   display: flex;
 }
@@ -1245,6 +1249,7 @@ body {
 .filter {
   width: 28.2%;
   padding-left: 60px;
+  background-color: #ebebeb;
 }
 
 .filter-form {
@@ -1337,6 +1342,7 @@ body {
   border: none;
   font-weight: 300;
   font-family: "Gilroy", "Arial", sans-serif;
+  background-color: transparent;
 }
 
 .filter-list {
@@ -1437,8 +1443,8 @@ body {
   font-weight: 800;
   line-height: 24px;
   font-family: "Gilroy", "Arial Black", sans-serif;
-  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 }
