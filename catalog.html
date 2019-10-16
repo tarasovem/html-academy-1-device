@@ -109,6 +109,26 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru"
               method="get">
           <fieldset>
+            <legend>Стоимость</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="text" name="max-price" value="5000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
             <legend>Цвет</legend>
             <ul class="filter-list">
               <li>
@@ -240,6 +260,23 @@
               <button class="item-options-compare" type="button">Добавить в
                 сравнение</button>
             </div>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <button type="button">Назад</button>
+          </li>
+          <li class="pagination-item">
+            <button type="button">1</button>
+          </li>
+          <li class="pagination-item">
+            <button type="button">2</button>
+          </li>
+          <li class="pagination-item">
+            <button type="button">3</button>
+          </li>
+          <li class="pagination-item">
+            <button type="button">Вперед</button>
           </li>
         </ul>
       </section>
