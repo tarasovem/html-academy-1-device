@@ -1421,7 +1421,26 @@ body {
   margin-right: 20px;
   margin-bottom: 46px;
   margin-left: 20px;
+}
 
+.goods-item.new::after {
+  content: "New";
+  position: absolute;
+  top: 28px;
+  right: 27px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 }
 
 .goods-item a {
