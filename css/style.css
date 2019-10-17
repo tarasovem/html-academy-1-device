@@ -1731,16 +1731,19 @@ body {
   line-height: 24px;
 }
 
-.modal-feedback {
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
   width: 960px;
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+  transform: translate(-50%, -50%);
+}
+
+.modal-feedback {
   height: 553px;
   padding: 78px 100px 80px;
   background-color: #ffffff;
-  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
-  transform: translate(-50%, -50%);
 }
 
 .modal-feedback .feedback-form {
@@ -1816,17 +1819,10 @@ body {
 }
 
 .modal-map {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-  width: 960px;
   height: 559px;
   background-repeat: no-repeat;
   background-position: 0 0;
   object-fit: contain;
-  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
-  transform: translate(-50%, -50%);
 }
 
 .modal-map img {
