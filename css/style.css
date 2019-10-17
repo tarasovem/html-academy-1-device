@@ -612,6 +612,7 @@ body {
 
 .popular-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -802,6 +803,7 @@ body {
 
 .partners-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 94px;
   margin-bottom: 85px;
@@ -1062,8 +1064,9 @@ body {
   padding-left: 24px;
 }
 
-.footer-nav-list li:not(:first-child) {
-  margin-left: 34px;
+.footer-nav-list li {
+  margin-right: 17px;
+  margin-left: 17px;
 }
 
 .footer-nav-list .item-link {
@@ -1099,21 +1102,25 @@ body {
 
 .footer-nav-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 5px 0 0 0;
   list-style-type: none;
 }
 
 .footer-address {
-  margin-right: 164px;
+  margin-right: auto;
 }
 
 .footer-phone {
+  text-align: right;
   margin-left: auto;
 }
 
 .footer-address,
 .footer-phone {
+  min-width: 210px;
   margin-top: 0;
   margin-bottom: 0;
 }
