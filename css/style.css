@@ -807,20 +807,32 @@ body {
   list-style-type: none;
 }
 
-.partners-item a img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
+.partners-item a {
+  display: inline-block;
+  height: auto;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.partners-item a:hover img {
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  -o-filter: grayscale(0);
-  filter: grayscale(0);
+.partners-item:nth-child(1):hover a {
+  background-image: url("../img/partners-1.png");
+}
+
+.partners-item:nth-child(2):hover a {
+  background-image: url("../img/partners-2.png");
+}
+
+.partners-item:nth-child(3):hover a {
+  background-image: url("../img/partners-3.png");
+}
+
+.partners-item:nth-child(4):hover a {
+  background-image: url("../img/partners-4.png");
+}
+
+.partners-item:hover img {
+  opacity: 0;
 }
 
 .about {
