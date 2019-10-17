@@ -1188,6 +1188,110 @@ body {
   letter-spacing: 0.5px;
 }
 
+.catalog-header {
+  background-color: #d9d9d9;
+  background-image: linear-gradient(to right, #d9d9d9 0, #d9d9d9 25%, #ebebeb 25%, #ebebeb 100%);
+}
+
+.catalog-header .container {
+  display: flex;
+  height: 100%;
+}
+
+.filter-title,
+.sorting-title {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.filter-title {
+  display: flex;
+  align-items: center;
+  width: 28.2%;
+  height: auto;
+  padding-left: 60px;
+  background-color: #d9d9d9;
+}
+
+.sorting-title {
+  padding-right: 56px;
+  padding-left: 72px;
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  width: 71.8%;
+}
+
+.sorting-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.sorting-item button {
+  height: 100%;
+  margin-right: 30px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sorting-item button.active {
+  color: #000000;
+}
+
+.sorting-controls {
+  display: flex;
+  margin-left: auto;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.sorting-controls li {
+  display: flex;
+  align-items: center;
+}
+
+.sorting-controls button {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.sorting-controls button.active {
+  opacity: 1;
+}
+
+.sorting-controls .amount-up button {
+  background-image: url("../img/svg/icon-up-dir.svg");
+  margin-right: 15px;
+}
+
+.sorting-controls .amount-down button {
+  background-image: url("../img/svg/icon-down-dir.svg");
+}
+
 .breadcrumbs {
   display: flex;
   margin-top: 24px;
@@ -1234,16 +1338,6 @@ body {
 
 .breadcrumbs a:active {
   color: rgba(0, 0, 0, 0.1);
-}
-
-.title-stub {
-  height: 70px;
-  width: 100vw;
-  font-size: 40px;
-  line-height: 70px;
-  text-align: center;
-  color: #7a7a7a;
-  background-color: #d9d9d9;
 }
 
 .filter {
@@ -1727,9 +1821,4 @@ body {
 
 .button-close:active {
   opacity: 0.3;
-}
-
-
-.red {
-  outline: 1px solid crimson;
 }
