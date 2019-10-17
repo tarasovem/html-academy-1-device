@@ -154,6 +154,10 @@ body {
   border: none;
 }
 
+.header-search .search-input:focus {
+  outline: none;
+}
+
 .header-search {
   position: relative;
 }
@@ -180,6 +184,7 @@ body {
 }
 
 .header-search .search-button {
+  position: relative;
   padding: 8px 18px;
   line-height: 30px;
   background-color: transparent;
@@ -202,6 +207,16 @@ body {
 .search-input:hover,
 .header-search .search-button:focus {
   opacity: 1;
+}
+
+.search-input:focus + .search-button::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -358px;
+  width: 356px;
+  height: 2px;
+  background-color: #000000;
 }
 
 .header-inner {
