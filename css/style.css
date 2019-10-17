@@ -26,8 +26,8 @@
   font-family: "Gilroy";
   font-weight: 300;
   src: local("Gilroy-Light"),
-    url("../font/gilroyextrabold.woff2") format("woff2"),
-    url("../font/gilroyextrabold.woff") format("woff");
+    url("../font/gilroylight.woff2") format("woff2"),
+    url("../font/gilroylight.woff") format("woff");
 }
 
 html {
@@ -454,7 +454,7 @@ body {
   margin-bottom: 0;
   padding-left: 0;
   width: 100%;
-  height: 495px;
+  max-height: 495px;
   list-style-type: none;
 }
 
@@ -1433,10 +1433,10 @@ body {
 
 .price-controls input {
   width: 50px;
-  font-size: 14px;
-  border: none;
   font-weight: 300;
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  font-family: "Gilroy", "Arial", sans-serif !important;
+  border: none;
   background-color: transparent;
 }
 
@@ -1460,6 +1460,10 @@ body {
 .filter-list input + label {
   position: relative;
   cursor: pointer;
+}
+
+.filter-list input:focus + label {
+  opacity: 0.3;
 }
 
 .filter-list input:disabled,
