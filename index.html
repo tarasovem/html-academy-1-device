@@ -319,13 +319,13 @@
             бывает.</p>
           <img class="contacts-map" src="img/map.jpg" alt="Офис компании по
           адресу город Москва, улица Строителей, дом 12" width="560" height="222">
-          <a href="" class="button">Напишите нам</a>
+          <a class="button" href="" id="contacts-button">Напишите нам</a>
         </section>
       </div>
 
     </main>
     <!--  Модальное окно (обратная связь) -->
-    <section class="modal modal-feedback" style="display: none;">
+    <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru"
             method="post">
@@ -333,26 +333,26 @@
           <label class="label" for="feedback-name">
             Ваше имя:
           </label>
-          <input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$" required>
+          <input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$">
         </p>
         <p class="feedback-form-item">
           <label class="label" for="feedback-email">
             Ваш e-mail:
           </label>
-          <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
+          <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com">
         </p>
         <p class="feedback-form-item">
           <label class="label" for="feedback-message">
             Текст письма:
           </label>
-          <textarea name="feedback-message" id="feedback-message" placeholder="В свободной форме" required></textarea>
+          <textarea name="feedback-message" id="feedback-message" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
       <button class="button-close" type="button" aria-label="Закрыть"></button>
     </section>
     <!--  Модальное окно (карта)-->
-    <section class="modal modal-map" style="display: none;">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map-big.jpg" alt="Офис компании по адресу город Москва, улица Строителей, дом 12" width="560" height="222">
       <button class="button-close" type="button" aria-label="Закрыть"></button>
@@ -424,5 +424,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/feedback.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

@@ -1994,17 +1994,67 @@ body {
   line-height: 24px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -400%);
+  }
+
+  70% {
+    transform: translate(-50%, -45%);
+  }
+
+  90% {
+    transform: translate(-50%, -55%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-51%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-49%, -50%);
+  }
+}
+
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 30;
+  display: none;
   width: 960px;
   -webkit-box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.modal.show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal.error {
+  animation: shake 0.6s;
 }
 
 .modal-feedback {
@@ -2143,6 +2193,7 @@ body {
   background-position: 0 0;
   border: none;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .button-close:hover,
