@@ -1,5 +1,4 @@
 var contactsButton = document.querySelector("#contacts-button");
-
 var feedbackModal = document.querySelector(".modal-feedback");
 var closeFeedbackModal = feedbackModal.querySelector(".button-close");
 var feedbackName = feedbackModal.querySelector("[name=feedback-name]");
@@ -7,10 +6,12 @@ var feedbackForm = feedbackModal.querySelector(".feedback-form");
 var feedbackEmail = feedbackModal.querySelector("[name=feedback-email]");
 var feedbackMessage = feedbackModal.querySelector("[name=feedback-message");
 var isStorageSupport = true;
-var storage = "";
+var storageName = "";
+var storageEmail = "";
 
 try {
-  storage = localStorage.getItem("feedbackName")
+  storageName = localStorage.getItem("feedbackName");
+  storageEmail = localStorage.getItem("feedbackEmail");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -18,9 +19,10 @@ try {
 contactsButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackModal.classList.add("show");
-  if (storage) {
-    feedbackName.value = storage;
-    feedbackEmail.focus();
+  if (storageName || storageEmail) {
+    feedbackName.value = storageName;
+    feedbackEmail.value = storageEmail;
+    feedbackMessage.focus();
   } else {
     feedbackName.focus();
   }
@@ -55,3 +57,5 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+
