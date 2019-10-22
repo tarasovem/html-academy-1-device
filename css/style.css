@@ -2,32 +2,32 @@
   font-family: "OpenSans";
   font-weight: 400;
   src: local("OpenSans"),
-  url("../font/opensans.woff2") format("woff2"),
-  url("../font/opensans.woff") format("woff");
+    url("../font/opensans.woff2") format("woff2"),
+    url("../font/opensans.woff") format("woff");
 }
 
 @font-face {
   font-family: "OpenSans";
   font-weight: 300;
   src: local("OpenSans-Light"),
-  url("../font/opensanslight.woff2") format("woff2"),
-  url("../font/opensanslight.woff") format("woff");
+    url("../font/opensanslight.woff2") format("woff2"),
+    url("../font/opensanslight.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy";
   font-weight: 800;
   src: local("Gilroy-ExtraBold"),
-  url("../font/gilroyextrabold.woff2") format("woff2"),
-  url("../font/gilroyextrabold.woff") format("woff");
+    url("../font/gilroyextrabold.woff2") format("woff2"),
+    url("../font/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy";
   font-weight: 300;
   src: local("Gilroy-Light"),
-  url("../font/gilroylight.woff2") format("woff2"),
-  url("../font/gilroylight.woff") format("woff");
+    url("../font/gilroylight.woff2") format("woff2"),
+    url("../font/gilroylight.woff") format("woff");
 }
 
 html {
@@ -1506,6 +1506,15 @@ body {
   color: #000000;
 }
 
+.sorting-item button:not(.active):hover,
+.sorting-item button:not(.active):focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-item button:not(.active):active {
+  color: #000000;
+}
+
 .sorting-controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1536,6 +1545,15 @@ body {
 }
 
 .sorting-controls button.active {
+  opacity: 1;
+}
+
+.sorting-controls button:hover,
+.sorting-controls button:focus {
+  opacity: 0.4;
+}
+
+.sorting-controls button:active {
   opacity: 1;
 }
 
