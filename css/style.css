@@ -527,6 +527,7 @@ body {
 }
 
 .promo-slider label {
+  position: relative;
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -663,10 +664,11 @@ body {
   min-height: 502px;
 }
 
-#gadget-1:checked ~ .slider-controls [for="gadget-1"] i,
-#gadget-2:checked ~ .slider-controls [for="gadget-2"] i,
-#gadget-3:checked ~ .slider-controls [for="gadget-3"] i {
-  position: relative;
+#gadget-1:checked ~ .slider-controls [for="gadget-1"]::after,
+#gadget-2:checked ~ .slider-controls [for="gadget-2"]::after,
+#gadget-3:checked ~ .slider-controls [for="gadget-3"]::after {
+  content: "";
+  position: absolute;
   display: inline-block;
   top: 3px;
   left: 3px;
