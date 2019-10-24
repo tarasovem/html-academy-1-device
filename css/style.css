@@ -289,12 +289,12 @@ body {
   margin-left: 19px;
 }
 
-.user-menu .user-profile {
+.user-profile {
   position: relative;
   padding-left: 27px;
 }
 
-.user-menu .user-profile a::before {
+.user-profile a::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -539,6 +539,10 @@ body {
   cursor: pointer;
 }
 
+.promo-slider label:focus {
+  color: #000;
+}
+
 .promo-slider .slider-list {
   margin-top: 0;
   margin-bottom: 0;
@@ -629,7 +633,7 @@ body {
   padding-right: 44px;
 }
 
-.promo-slider .slider-advantages {
+.promo-slider .promo-slider-advantages {
   margin-top: 53px;
   border-collapse: collapse;
 }
@@ -1430,7 +1434,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  min-height: 70px;
 }
 
 .filter-title,
@@ -1490,12 +1494,17 @@ body {
   list-style-type: none;
 }
 
+.sorting-item {
+  vertical-align: middle;
+}
+
 .sorting-item a {
   height: 100%;
   margin-right: 30px;
   padding: 0;
   font-size: 14px;
   line-height: 18px;
+  vertical-align: bottom;
   color: rgba(0, 0, 0, 0.3);
   background-color: transparent;
   border: none;
@@ -1559,7 +1568,7 @@ body {
 
 .amount-up a {
   background-image: url("../img/svg/icon-up-dir.svg");
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .amount-down a {
@@ -1717,7 +1726,7 @@ body {
   width: 50px;
   font-weight: 300;
   font-size: 14px;
-  font-family: "Gilroy", "Arial", sans-serif !important;
+  font-family: "Gilroy", "Arial", sans-serif;
   border: none;
   background-color: transparent;
 }
@@ -2180,6 +2189,7 @@ body {
 
 .modal-feedback textarea {
   height: 156px;
+  resize: none;
 }
 
 .modal-feedback input,
